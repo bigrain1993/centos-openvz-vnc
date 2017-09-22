@@ -1,0 +1,63 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: OS - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/OS.res" /d "NDEBUG" /d "_AFXDLL" "H:\ch\my_os\操作系统模拟\OS.rc"" 
+Creating temporary file "C:\DOCUME~1\qc\LOCALS~1\Temp\RSP7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/OS.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\ch\my_os\操作系统模拟\CPU.cpp"
+"H:\ch\my_os\操作系统模拟\DirCreatDlg.cpp"
+"H:\ch\my_os\操作系统模拟\FileCreatDlg.cpp"
+"H:\ch\my_os\操作系统模拟\FileType.cpp"
+"H:\ch\my_os\操作系统模拟\FS.cpp"
+"H:\ch\my_os\操作系统模拟\OS.cpp"
+"H:\ch\my_os\操作系统模拟\OSDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\qc\LOCALS~1\Temp\RSP7.tmp" 
+Creating temporary file "C:\DOCUME~1\qc\LOCALS~1\Temp\RSP8.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/OS.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"H:\ch\my_os\操作系统模拟\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\qc\LOCALS~1\Temp\RSP8.tmp" 
+Creating temporary file "C:\DOCUME~1\qc\LOCALS~1\Temp\RSP9.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/OS.pdb" /machine:I386 /out:"Release/OS.exe" 
+".\Release\CPU.obj"
+".\Release\DirCreatDlg.obj"
+".\Release\FileCreatDlg.obj"
+".\Release\FileType.obj"
+".\Release\FS.obj"
+".\Release\OS.obj"
+".\Release\OSDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\OS.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\qc\LOCALS~1\Temp\RSP9.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+CPU.cpp
+DirCreatDlg.cpp
+FileCreatDlg.cpp
+FileType.cpp
+FS.cpp
+OS.cpp
+OSDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+OS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

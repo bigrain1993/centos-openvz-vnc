@@ -1,0 +1,368 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\OS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\OS.ico"
+IDI_BOAR2               ICON    DISCARDABLE     "res\\desktop.ico"
+IDI_BOAR1               ICON    DISCARDABLE     "res\\help.ico"
+IDI_SCRE2               ICON    DISCARDABLE     "res\\network computer.ico"
+IDI_SCRE1               ICON    DISCARDABLE     "res\\my computer.ico"
+IDI_CD1                 ICON    DISCARDABLE     "res\\Audio Cd.ico"
+IDI_CD2                 ICON    DISCARDABLE     "res\\audio-cd.ico"
+IDI_DISK                ICON    DISCARDABLE     "res\\disk.ICO"
+IDI_FILE                ICON    DISCARDABLE     "res\\file.ico"
+IDI_FLODER              ICON    DISCARDABLE     "res\\floder.ICO"
+IDI_TREE                ICON    DISCARDABLE     "res\\tree1s.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 OS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "简单操作系统模拟 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 9-522 cch (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_OS_DIALOG DIALOGEX 0, 0, 526, 355
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "操作系统模拟"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "模拟结束",IDOK,72,330,167,18
+    PUSHBUTTON      "帮  助",IDC_MYHELP,454,72,46,17
+    PUSHBUTTON      "运  行",IDC_RUNTHREAD,454,25,46,17
+    PUSHBUTTON      "停  止",IDC_ENDTHREAD,454,49,46,17
+    PUSHBUTTON      "进程系统初始化",IDC_RESTART,19,305,67,14
+    LISTBOX         IDC_LIST1,15,46,53,88,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LISTBOX         IDC_LIST2,147,46,53,88,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "就绪队列",IDC_STATIC,24,27,33,8
+    LTEXT           "当前进程名",IDC_STATIC,79,28,41,8
+    LTEXT           "阻塞队列",IDC_STATIC,146,27,33,8
+    LTEXT           "当前指令",IDC_STATIC,84,68,33,8
+    LTEXT           "当前结果",IDC_STATIC,84,102,33,8
+    EDITTEXT        IDC_EDIT1,82,47,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,82,82,53,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,82,118,53,14,ES_AUTOHSCROLL
+    CONTROL         "Slider1",IDC_SLIDER1,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_TABSTOP,367,71,66,21
+    CTEXT           "时间片长度 :",IDC_STATIC,298,59,51,14,SS_CENTERIMAGE
+    ICON            IDI_SCRE1,IDC_STATIC1,66,175,20,20
+    ICON            IDI_CD1,IDC_STATIC3,64,236,20,20
+    ICON            IDI_BOAR1,IDC_STATIC5,124,204,20,20
+    LTEXT           "设备 A",IDC_STATIC,26,179,25,10
+    LTEXT           "状态：",IDC_STATIC,26,207,25,8
+    LTEXT           "设备 B",IDC_STATIC,26,240,25,8
+    LTEXT           "状态：",IDC_STATIC,26,268,25,8
+    LTEXT           "设备 C",IDC_STATIC,113,183,25,8
+    LTEXT           "状态：",IDC_STATIC,115,242,25,8
+    LTEXT           "空闲",IDC_STATIC2,65,207,34,19
+    LTEXT           "空闲",IDC_STATIC4,64,268,34,19
+    LTEXT           "空闲",IDC_STATIC6,120,267,34,19
+    CTEXT           "2",IDC_STATIC7,374,58,52,11,SS_CENTERIMAGE | NOT 
+                    WS_GROUP,WS_EX_STATICEDGE
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH,
+                    358,43,81,11
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,31,227,71,1
+    LISTBOX         IDC_LIST3,221,44,63,91,NOT LBS_NOTIFY | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,102,173,1,112
+    LTEXT           "已结束进程及结果",IDC_STATIC,217,28,66,8
+    LTEXT           "时间片：",IDC_STATIC,298,45,32,8
+    LTEXT           "CPU运行总时间：",IDC_STATIC,298,28,71,11,SS_CENTERIMAGE
+    CTEXT           "0",IDC_STATIC8,374,27,52,11,SS_CENTERIMAGE | SS_SUNKEN | 
+                    NOT WS_GROUP,WS_EX_STATICEDGE
+    CONTROL         "",IDC_DISK,"Static",SS_BLACKFRAME,314,129,202,202
+    LTEXT           "进程管理",IDC_STATIC9,39,7,83,20
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,301,98,220,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,301,98,1,47
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,4,143,299,1
+    CONTROL         "Tree1",IDC_TREE1,"SysTreeView32",TVS_HASBUTTONS | 
+                    TVS_HASLINES | TVS_LINESATROOT | WS_BORDER | WS_TABSTOP,
+                    178,176,116,134
+    LTEXT           "目录：",IDC_STATIC,186,161,25,8
+    LTEXT           "磁盘:",IDC_STATIC,351,112,21,8
+    PUSHBUTTON      "磁盘格式化",IDC_FORMAT,105,305,50,14
+    LTEXT           "时间片调整：",IDC_STATIC,298,79,49,8
+    LTEXT           "文件管理",IDC_STATIC11,226,148,81,26
+    LTEXT           "设备管理",IDC_STATIC10,26,147,69,26
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,112,13,410,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,3,13,30,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,165,143,1,182
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,5,296,162,1
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,210,29,1,104
+    CONTROL         "",IDC_STATIC,"Static",SS_WHITEFRAME,303,170,1,143
+    ICON            IDI_TREE,IDC_STATIC,265,321,20,20
+END
+
+IDD_DIRCREAT DIALOG DISCARDABLE  0, 0, 125, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "创建目录"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,62,14,40,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,13,39,36,11
+    PUSHBUTTON      "取消",IDCANCEL,69,39,36,11
+    LTEXT           "目录名：",IDC_STATIC,17,16,33,8
+    GROUPBOX        "",IDC_STATIC,3,2,118,60
+END
+
+IDD_FILECREAT DIALOG DISCARDABLE  0, 0, 137, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "创建文件"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_EDIT1,28,26,29,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,34,60,23,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,72,26,51,84,ES_MULTILINE | WS_VSCROLL
+    DEFPUSHBUTTON   "确认",IDOK,17,80,32,12
+    PUSHBUTTON      "取消",IDCANCEL,17,98,32,12
+    LTEXT           "文件名:",IDC_STATIC,13,11,27,8
+    LTEXT           "扩展名:",IDC_STATIC,14,46,27,8
+    LTEXT           "内容:",IDC_STATIC,68,11,19,8
+    GROUPBOX        "",IDC_STATIC,4,3,128,115
+END
+
+IDD_FILETYPE DIALOG DISCARDABLE  0, 0, 94, 59
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "显示文件"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,4,43,86,11
+    EDITTEXT        IDC_EDIT1,4,3,86,41,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "OS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "OS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "OS.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "OS 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_OS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 522
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 348
+    END
+
+    IDD_DIRCREAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 121
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_FILECREAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 132
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 118
+    END
+
+    IDD_FILETYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 90
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 54
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "ONE"
+    BEGIN
+        MENUITEM SEPARATOR
+        MENUITEM "创建目录",                    ID_MENU_MAKEDIR
+        MENUITEM "删除目录",                    ID_MENU_DELDIR
+        MENUITEM SEPARATOR
+        MENUITEM "创建文件",                    ID_MENU_CREAT
+        MENUITEM "删除文件",                    ID_MENU_DELETE
+        MENUITEM "显示文件",                    ID_MENU_TYPE
+        MENUITEM SEPARATOR
+        MENUITEM "添加进程",                    ID_MENU_ADDTHR
+        MENUITEM SEPARATOR
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 OS(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\OS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
